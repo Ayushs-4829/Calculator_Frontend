@@ -23,7 +23,7 @@ export default function Calculator() {
             });
             setResult(response.data.result ?? response.data.error);
         } catch (error) {
-            setResult("Error: Unable to connect to server");
+            setResult("Error" + error);
         }
     };
 
